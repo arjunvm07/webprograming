@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Images</title>
+<style type="text/css">
+img{
+	width:600px;
+	height:450px;
+}
+#txt2{
+	display:none;
+}
+</style>
+</head>
+<body bgcolor="pink">
+  <center>
+<div id="main">
+<div id="image-text">
+    <img src="flower.jpg" id="img1">
+</div>
+<div id="head">
+	<h1 id="txt1"><i>FLOWER</i></h1>
+	<h1 id="txt2"><i>BIRD</i></h1>
+</div>
+</div>
+
+ </center>
+<script type="text/javascript">
+	document.getElementById('main').addEventListener("mouseover",change1);
+	document.getElementById('main').addEventListener("mouseout",change2);
+    function change1(){
+       document.getElementById('img1').src="bird.jpg";
+	document.getElementById('txt1').style.display="none";
+	document.getElementById('txt2').style.display="block";
+    }
+    function change2(){
+       document.getElementById('img1').src="flower.jpg";
+	document.getElementById('txt1').style.display="block";
+	document.getElementById('txt2').style.display="none";
+    }
+    
+</script>
+</body>
+</html>
